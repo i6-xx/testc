@@ -8,14 +8,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: make
       run: make
-    
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.0
+      with:
+        path: test
+      
   runx:
 
     runs-on: ubuntu-latest
