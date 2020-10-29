@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-  
+    - uses: actions/download-artifact@v2.0.5  
     - name: run
       run: ./hello
       
