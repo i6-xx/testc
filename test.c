@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main(void)
 {
-    printf("Hi\n");
+    char a[3];
+    memcpy(a,"aaaaaaa",5);
+    printf("Hi %s\n",a);
     return 0;
 }
