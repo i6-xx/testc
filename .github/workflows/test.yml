@@ -28,7 +28,9 @@ jobs:
       uses: actions/download-artifact@v2.0.5
       with:
           name: xx  
-    - name: run
-      run: ./hello
+    - name: run 
+      run: |
+       chmod +x ./hello
+       ./hello
       
      
